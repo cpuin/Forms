@@ -1,0 +1,269 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+*::before::after{
+    box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, button {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+    margin: 0 auto;
+}
+
+body {
+	font-family: Roboto;
+	color: #fff;
+}
+
+.main {
+    background: url(../images/background.webp) no-repeat center / cover;
+}
+
+.hidden {
+	display: none;
+}
+
+.wrapper {
+	margin: 0px 0px 0px auto;
+	width: 500px;
+	min-height: 100vh;
+	background: rgba(233, 233, 233, 0.25);
+	backdrop-filter: blur(5px);
+	display: flex;
+	justify-content: center;
+}
+
+.container {
+	width: 340px;
+}
+
+.switch {
+	margin-top: 60px;
+	margin-bottom: 75px;
+}
+
+.switch input {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+
+.switch input + label {
+	display: flex;
+	cursor: pointer;
+	width: 100%;
+	height: 36px;
+	border-radius: 30px;
+	border: 1px solid #153416;
+	position: relative;
+}
+
+.switch input + label span {
+	font-size: 12px;
+	position: relative;
+	flex: 1 1 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.switch input + label::before {
+	content: '';
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	width: 50%;
+	height: 32px;
+	border-radius: 30px;
+	background: #153416;
+	transition: all .3s linear;
+}
+
+.switch input:checked + label::before {
+	left: calc(50% - 2px);
+}
+
+.title {
+	text-align: center;
+	font-size: 30px;
+	margin-bottom: 30px;
+}
+
+.email, .password {
+	border-radius: 30px;
+	background: #929191;
+	border: none;
+	width: 100%;
+	padding: 15px 0 15px 20px;
+	color: #fff;
+}
+
+.email {
+	margin-bottom: 15px;
+}
+
+.password {
+	margin-bottom: 20px;
+}
+
+.email::placeholder, .password::placeholder {
+	color: #fff;
+	opacity: 0.7;
+}
+
+.under_input {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+.remember_me input + label {
+	font-size: 12px;
+	padding: 5px 5px 5px 30px;
+	display: inline-block;
+	position: relative;
+	cursor: pointer;
+}
+
+.remember_me input + label::before {
+	content: '';
+	position: absolute;
+	top: 2px;
+	left: 0;
+	width: 15px;
+	height: 15px;
+	border-radius: 2px;
+	border: 1px solid #D9D9D9;
+	transition: all .2s linear;
+}
+
+.remember_me input:checked + label::before {
+	background: #153416;
+	transition: all .2s linear;
+}
+
+.remember_me input:checked + label::after {
+	content: '';
+	position: absolute;
+	top: 3px;
+	left: 5.5px;
+	width: 5px;
+	height: 10px;
+	transform: rotate(38deg);
+	border-bottom: 1px solid white;
+	border-right: 1px solid white;
+}
+
+.remember_me input {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+
+.under_input a {
+	color: #153416;
+	font-size: 12px;
+}
+
+.btn {
+	width: 100%;
+	border-radius: 30px;
+	background: #153416;
+	padding: 15px 0;
+	color: #fff;
+	font-size: 12px;
+	margin-bottom: 40px;
+}
+
+.btn:hover {
+	cursor: pointer;
+	background: #0f2510;
+}
+
+.no_acc {
+	display: flex;
+	justify-content: center;
+	gap: 15px;
+	margin-bottom: 30px;
+}
+
+.no_acc span {
+	color: #153416;
+	font-size: 12px;
+}
+
+.to_register {
+	color: #fff;
+	font-size: 12px;
+}
+
+.no_acc + p {
+	color: #153416;
+	text-align: center;
+	font-size: 12px;
+	margin-bottom: 20px;
+}
+
+.icons a {
+	text-decoration: none;
+}
+
+.icons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 15px;
+}
+
+
+.icon {
+	width: 25px;
+	height: 24px;
+	fill: #153416;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>FORMS</title>
+</head>
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" class="hidden">
+        <symbol viewBox="0 0 15 15" id="instagram">
+            <path d="M7.5 5C6.11929 5 5 6.11929 5 7.5C5 8.88071 6.11929 10 7.5 10C8.88071 10 10 8.88071 10 7.5C10 6.11929 8.88071 5 7.5 5Z"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.5 0C2.01472 0 0 2.01472 0 4.5V10.5C0 12.9853 2.01472 15 4.5 15H10.5C12.9853 15 15 12.9853 15 10.5V4.5C15 2.01472 12.9853 0 10.5 0H4.5ZM4 7.5C4 5.567 5.567 4 7.5 4C9.433 4 11 5.567 11 7.5C11 9.433 9.433 11 7.5 11C5.567 11 4 9.433 4 7.5ZM11 4H12V3H11V4Z" />
+        </symbol>
+        <symbol viewBox="0 0 1920 1920" id="facebook">
+            <path d="M1168.737 487.897c44.672-41.401 113.824-36.889 118.9-36.663l289.354-.113 6.317-417.504L1539.65 22.9C1511.675 16.02 1426.053 0 1237.324 0 901.268 0 675.425 235.206 675.425 585.137v93.97H337v451.234h338.425V1920h451.234v-789.66h356.7l62.045-451.233H1126.66v-69.152c0-54.937 14.214-96.112 42.078-122.058" fill-rule="evenodd"/>
+        </symbol>
+        <symbol viewBox="-271 283.9 256 235.1" id="linkedin">
+            <rect x="-264.4" y="359.3" width="49.9" height="159.7"/>
+            <path d="M-240.5,283.9c-18.4,0-30.5,11.9-30.5,27.7c0,15.5,11.7,27.7,29.8,27.7h0.4c18.8,0,30.5-12.3,30.4-27.7C-210.8,295.8-222.1,283.9-240.5,283.9z"/>
+            <path d="M-78.2,357.8c-28.6,0-46.5,15.6-49.8,26.6v-25.1h-56.1c0.7,13.3,0,159.7,0,159.7h56.1v-86.3c0-4.9-0.2-9.7,1.2-13.1c3.8-9.6,12.1-19.6,27-19.6c19.5,0,28.3,14.8,28.3,36.4V519h56.6v-88.8C-14.9,380.8-42.7,357.8-78.2,357.8z"/>
+        </symbol>
+    </svg>
+    <main class="main">
+        <div class="wrapper">
+            <div class="container">
+                <div class="switch">
+                    <input type="checkbox" id="switch">
+                    <label for="switch">
+                        <span>Вход</span>
+                        <span>Регистрация</span>
+                    </label>
+                </div>
+                <h1 class="title">Вход</h1>
+                <form action="#">
+                    <input class="email" type="email" placeholder="Введите E-mail">
+                    <input class="password" type="password" placeholder="Пароль">
+                    <div class="under_input">
+                        <div class="remember_me">
+                            <input type="checkbox" id="checkbox">
+                            <label for="checkbox">Запомнить меня</label>
+                        </div>
+                        <a href="#">Забыли пароль?</a>
+                    </div>
+                    <button class="btn">Войти</button>
+                </form>
+                <div class="no_acc">
+                    <span>Еще нет аккаунта?</span>
+                    <a href="#" class="to_register">Зарегистрироваться</a>
+                </div>
+                <p>Или войдите через</p>
+                <div class="icons">
+                    <a href="#">
+                        <svg class="icon">
+                            <use href="#facebook"></use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg class="icon">
+                            <use href="#instagram"></use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg class="icon">
+                            <use href="#linkedin"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
